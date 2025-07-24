@@ -3,10 +3,9 @@
 .noto-serif-font {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
   font-variation-settings:
-    "width" 100;
+    "wdth" 100;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -147,6 +146,48 @@ body{
   row-gap: 30px;
 }
 
+/* plants lover style */
+.plants-lover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 210px 150px 135px 150px;
+}
+.img-box{
+  position: relative;
+}
+.plant-lover-image{
+  max-width: 576px;
+  width: 100%;
+  height: auto;
+}
+.badge{
+  position: absolute;
+  top: -127px;
+  right: -93px;
+  width: 286px;
+  height: 286px;
+}
+.plant-lover-content{
+  max-width: 540px;
+}
+.plant-lover-title {
+  font-size: 3.125rem;
+  margin-bottom: 30px;
+}
+.plant-lover-list{
+  padding-left: 35px;
+  padding-right: 25px;
+}
+.lover-list-item{
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: #000000;
+  opacity: 50%;
+  margin-bottom: 20px;
+}
+
 /* responsive media query */
 
 @media screen and (max-width:576px) {
@@ -203,10 +244,7 @@ body{
 
   /* plants responsive */
 
-  .plants{
-    
 
-  }
   .plants-content{
    margin: 26px 16px 37px 16px;
   }
@@ -243,6 +281,26 @@ body{
   .card-price{
     max-height: 100%;
     max-width: 100%;
+  }
+
+  /* plants lover responsive */
+
+  .plants-lover{
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 30px;
+  }
+  .plant-lover-title{
+    font-size: 1.5rem;
+    margin-top: -40px;
+  }
+  .lover-list-item{
+    font-size: 0.875rem;
+    margin-left: -15px;
+    margin-right: -25px;
+  }
+  .badge{
+    display: none;
   }
 
 
