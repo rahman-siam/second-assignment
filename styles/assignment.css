@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* navbar styles */
+
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 100px 120px 100px;
+}
+.nav-menu{
+ display: flex;
+ gap: 48px;
+}
+.nav-item,.nav-item-cart{
+  list-style: none;
+}
+
+.nav-home,
+.nav-shop,
+.nav-about-us,
+.nav-cart-item{
+  text-decoration: none;
+}
+.nav-home{
+  font-weight: 600;
+  font-size: 1rem;
+  color:rgba(37, 36, 50, 1) ;
+}
+
+.nav-shop,.nav-about-us{
+  color: rgba(137, 135, 161, 1);
+  font-size: 1rem;
+  }
+  .nav-cart-item{
+    font-size: 1rem;
+    color: #000;
+  }
+
+.nav-cart{
+  display: flex;
+}
+
+.nav-cart-logo{
+  height: 15px;
+  width: 22px;
+}
+
+
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+  .navbar{
+    margin: 13px 16px;
+  }
+
+  .nav-logo{
+    height: 38px;
+    width: 63px;
+  }
+
+  .nav-item{
+    display: none;
+  }
+  .nav-cart{
+    height: 24px;
+    width: 113px;
+  }
+
+}
