@@ -28,9 +28,11 @@ body{
   background-color: #f5f8ff;
 }
 
+.btn-primary{
+
+}
+
 /* navbar styles */
-
-
 
 .navbar{
   display: flex;
@@ -65,15 +67,12 @@ body{
   .nav-cart-item{
     font-size: 1rem;
     color: #000;
+    font-weight: 500;
+    opacity: 100%;
   }
 
 .nav-cart{
   display: flex;
-}
-
-.nav-cart-logo{
-  height: 15px;
-  width: 22px;
 }
 
 
@@ -102,12 +101,57 @@ body{
 }
 
 
+/* plants section style */
 
+.plants-content{
+  text-align: center;
+  margin-bottom: 49px;
+}
 
+.plants-title{
+  font-weight: 600;
+  font-size: 3.125rem;
+}
 
+.plants-description{
+  font-weight: 500;
+  font-size: 1.375rem;
+  opacity: 50%;
+}
+.card-title{
+  font-weight: 500;
+  font-size: 1.375rem;
+}
+
+.card-price{
+  font-weight: 600;
+  font-size: 1.375rem;
+}
+
+.card-btn{
+  background-color: rgba(233, 90, 8, 1);
+  color:rgba(255, 255, 255, 1);
+  font-weight: 500;
+  font-size: 1rem;
+  border:none;
+  padding: 19px 80px;
+  margin-bottom: 20px;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-items: center;
+  column-gap: 20px;
+  row-gap: 30px;
+}
 
 /* responsive media query */
+
 @media screen and (max-width:576px) {
+
+  /* navar responsive */
+
   .navbar{
     margin: 13px 16px;
   }
@@ -124,6 +168,8 @@ body{
     height: 24px;
     width: 113px;
   }
+
+  /* banner responsive */
 
   .banner {
     flex-direction: column;
@@ -152,6 +198,50 @@ body{
   .banner-img img{
     max-width: 100%;
     
+  }
+
+  /* plants responsive */
+
+  .plants{
+    
+
+  }
+  .plants-content{
+   margin: 56px 16px 37px 16px;
+  }
+  .plants-title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .plants-description{
+    font-size: 0.875rem;
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .cards{
+    grid-template-columns: repeat(2,1fr );
+  }
+  .card-title{
+    font-size: 1rem;
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .card-price{
+    font-size: 1rem;
+    
+  }
+  .card-btn{
+    font-size: 1rem; 
+    padding: 18px 34px; 
+    
+  }
+  .card-img{
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .card-price{
+    max-height: 100%;
+    max-width: 100%;
   }
 
 
