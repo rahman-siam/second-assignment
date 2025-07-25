@@ -403,12 +403,14 @@ body{
 
   .l-d-collage{
   flex-direction: column;
-  justify-content: center;}
+  align-items: center;
+  }
   
   
   .element-zabo{
     max-width: 367px;
     max-height: 206px;
+    margin-top: -5px;
   }
   .zabo-offer{
   font-size: 1.25rem;
