@@ -188,6 +188,88 @@ body{
   margin-bottom: 20px;
 }
 
+/* latest deals styles */
+
+
+.l-d-content{
+  text-align: center;
+  margin-bottom: 49px;
+}
+
+.l-d-title{
+  font-weight: 600;
+  font-size: 3.125rem;
+}
+
+.l-d-description{
+  font-weight: 500;
+  font-size: 1.375rem;
+  opacity: 50%;
+}
+
+.l-d-collage{
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  
+  
+}
+.bloom-link {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.ana-link {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.zabo-link {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+
+  .element-bloom,.element-ana, .element-zabo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;     
+  height: 300px;            
+  border: none;
+  border-radius: 15px;
+  color: rgba(255, 255, 255, 1);
+  background-image: url('../images/deal-bloom.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:206px;
+  width: 367px;
+}
+
+.element-ana{
+  background-image: url('../images/deal-ana.png');
+  margin-top: 25px;
+}
+.element-zabo{
+  background-image: url('../images/deal-zabo.png');
+  height:437px;
+  width: 753px;
+}
+
+.boloom-offer,.ana-offer {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.zabo-offer{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+
 /* responsive media query */
 
 @media screen and (max-width:576px) {
@@ -303,10 +385,44 @@ body{
     display: none;
   }
 
+  /* latest deals responsive */
+
+
+  .l-d-content{
+   margin: 26px 16px 37px 16px;
+  }
+  .l-d-title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .l-d-description{
+    font-size: 0.875rem;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .l-d-collage{
+  flex-direction: column;
+  justify-content: center;}
+  
+  
+  .element-zabo{
+    max-width: 367px;
+    max-height: 206px;
+  }
+  .zabo-offer{
+  font-size: 1.25rem;
+}
+ .zabo-link{
+  font-size:1rem ;
+ }
+
+ 
+}
+
 
   
-    
-  }
+
   
 
   
